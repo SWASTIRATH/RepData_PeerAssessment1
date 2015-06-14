@@ -8,7 +8,8 @@ library(ggplot2)
 
 ###Loading and processing the data
 ```{r,echo= TRUE}
-data_raw<-read.csv("C:/Users/user/Desktop/activity.csv",header=TRUE)
+unzip(zipfile="activity.zip")
+data_raw <- read.csv("activity.csv")
 data<-data_raw
 head(data,10)
 ```
